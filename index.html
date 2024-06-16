@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body class="container-fluid">
+
+    <div class="page-header">
+        <h1>Tic-Tac-Toe</h1>
+        <p>The first Player to win 5 GAMES wins the MATCH!</p>
+    </div>
+
+    <hr>
+
+    <h2>Scoreboard</h2>
+
+<!-- Table for the scoreboard. -->
+
+    <table class="table table-borderless text-center">
+        <tr>
+            <th><u>Player One - X's</u></th>
+            <th><u>Player Two - O's</u></th>
+        </tr>
+        <tr>
+            <td id="player-1-score"></td>
+            <td id="player-2-score"></td>
+        </tr>
+    </table>
+
+<!-- This is where you will know whose turn it is or who won the game or match. -->
+
+    <h3 id="player-turn">Player One starts the GAME!</h3>
+
+    <br>
+    <br>
+
+<!-- Using the onclick attribute for the input tags to call upon the proper functions for each space. -->
+
+    <div class="game-board">
+        <div class="row">
+            <input type="text" class="game-space" id="top-left"
+                onclick="topLeftPlay(); gamePlay();">
+            <input type="text" class="game-space" id="top-middle"
+                onclick="topMiddlePlay(); gamePlay();">
+            <input type="text" class="game-space" id="top-right"
+                onclick="topRightPlay(); gamePlay();">
+        </div>
+        <div class="row">
+            <input type="text" class="game-space" id="middle-left"
+                onclick="middleLeftPlay(); gamePlay();">
+            <input type="text" class="game-space" id="middle-middle"
+                onclick="middleMiddlePlay(); gamePlay();">
+            <input type="text" class="game-space" id="middle-right"
+                onclick="middleRightPlay(); gamePlay();">
+        </div>
+        <div class="row">
+            <input type="text" class="game-space" id="bottom-left"
+                onclick="bottomLeftPlay(); gamePlay();">
+            <input type="text" class="game-space" id="bottom-middle"
+                onclick="bottomMiddlePlay(); gamePlay();">
+            <input type="text" class="game-space" id="bottom-right"
+                onclick="bottomRightPlay(); gamePlay();">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+<!-- Giving the divs for the buttons their own id to be able to call upon them seperately. -->
+
+    <div class="container text-center" id="reset-button">
+        <button class="btn btn-danger" id="reset-game" onclick="resetGame()">Reset GAME</button>
+    </div>
+
+    <div class="container text-center" id="reset-match-button">
+        <button class="btn btn-success" id="reset-match" onclick="resetMatch()">Reset MATCH</button>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

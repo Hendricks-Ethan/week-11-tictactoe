@@ -1,0 +1,87 @@
+/*  Tags.  */
+
+h2, h3 {
+    text-align: center;
+}
+
+th, td {
+    font-size: 25px;
+}
+
+/*  Class.  */
+
+.page-header {
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+
+.game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-space {
+    background-color: white;
+    border: none;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 125px;
+    color: blue;
+    cursor: pointer;
+
+}
+
+/*  ID.  */
+
+
+#top-left {
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#top-middle {
+    border-bottom: solid black 2px;
+}
+
+#top-right {
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+#middle-left {
+    border-right: solid black 2px;
+}
+
+#middle-right {
+    border-left: solid black 2px;
+}
+
+#bottom-left {
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#bottom-middle {
+    border-top: solid black 2px;
+}
+
+#bottom-right {
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+}
+
+/*  Buttons start in the app hidden. */
+
+#reset-button {
+    display: none;
+}
+
+#reset-match-button {
+    display: none;
+}
